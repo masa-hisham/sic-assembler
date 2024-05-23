@@ -1,0 +1,12 @@
+4000   SUM          START        4000      
+4000   FTRST        LDX          ZERO      
+4003                LDA          ZERO      
+4006   LOOP         ADD          TABLE,X    comm
+4009                TIX          COUNT     
+400C                JLT          LOOP      
+400F                RSUB                   
+4012   TABLE        RESW         2000      
+5782   COUNT        RESW         1         
+5785   ZERO         WORD         0         
+5788   TOTAL        RESW         1         
+                    END          FIRST     
